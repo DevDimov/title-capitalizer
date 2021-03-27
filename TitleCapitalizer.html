@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title Capitalizer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="TitleCapitalizerStylesheet.css">
+</head>
+<body>
+    <div id="wrapper">
+        <p>Type your title below to capitalize it</p>
+        <textarea id="textarea" name="title-to-capitalize"></textarea>
+        <div id="buttons-container">
+            <button type="button" id="title-case" onclick="toTitleCase()">Title Case</button>
+            <button type="button" id="sentence-case" onclick="toSentenceCase()">Sentence case</button>
+            <button type="button" id="uppercase" onclick="titleToUppercase()">UPPERCASE</button>
+            <button type="button" id="first-letter" onclick="toFirstLetter()">First Letter</button>
+        </div>
+    </div>
+    <script src="TitleCapitalizerScript.js"></script>
+</body>
+</html>

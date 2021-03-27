@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+:root {
+    --button-color: #1D3557;
+    --button-color-hover: #457B9D;
+    --button-color-clicked: #E63946;
+    --border-color: #E63946;
+    --input-color: #1D3557;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+p {
+    font-size: 1em;
+    text-align: center;
+    padding: 0 5.8em;
+}
+
+button {
+    min-width: 10em;
+    min-height: 3em;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5em 0.5em;
+}
+
+#buttons-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+    resize: none;
+    padding: 0 0.5em;
+    height: 6em;
+    margin: 0 1.5em;
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid var(--border-color);
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    height: 100vh;
+}
+
+button:hover {
+    background-color: var(--button-color-hover);
+}
+
+@media only screen and (min-width: 620px) {
+    textarea {
+        height: 4em;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+    textarea {
+        height: 2em;
+        width: 65vw;
+    }
+    #wrapper {
+        align-items: center;
+    }
+    button {
+        font-size: 1em;
+    }
+}
